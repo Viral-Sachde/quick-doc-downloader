@@ -102,7 +102,7 @@ class BackgroundService {
         // Show notification for completed download
         chrome.notifications.create({
           type: 'basic',
-          iconUrl: 'icons/icon.svg',
+          iconUrl: 'icons/icon-48.png',
           title: 'Quick Doc',
           message: `Downloaded: ${downloadItem.filename}`
         });
