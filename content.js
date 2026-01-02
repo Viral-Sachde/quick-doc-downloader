@@ -1,5 +1,5 @@
-// Content script for Document Link Extractor
-class ContentExtractor {
+// Content script for Quick Doc
+class QuickDocContent {
   constructor() {
     this.setupMessageListener();
   }
@@ -432,5 +432,5 @@ class ContentExtractor {
   }
 }
 
-// Initialize the content script
-new ContentExtractor();
+// Initialize Quick Doc content script
+new QuickDocContent();

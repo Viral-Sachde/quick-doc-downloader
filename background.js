@@ -1,4 +1,4 @@
-// Background service worker for Document Link Extractor
+// Background service worker for Quick Doc
 class BackgroundService {
   constructor() {
     this.setupEventListeners();
@@ -75,8 +75,8 @@ class BackgroundService {
     const defaultSettings = {
       innerContent: true,
       makeAbsolute: true,
-      mediaPrefixXlsx: 'media | /Sitecore/adshkjkasd/adsdksa/',
-      mediaPrefixHtml: '/~/media/Files/K/Kingfisher-Plc/Universal/investors/result-reports-presentation/2025',
+      mediaPrefixXlsx: 'media | /Sitecore/media files/Y/SiteName/Universal/investors/result-reports-presentation/',
+      mediaPrefixHtml: '/~/media/Files/Y/SiteName/Universal/investors/result-reports-presentation/',
       fileExtensions: 'pdf,docx,doc,xlsx,xls,pptx,ppt,txt,csv,rtf,odt',
       linkSelectors: 'a[href],link[href],a[data-href],a[data-download]'
     };
@@ -102,8 +102,8 @@ class BackgroundService {
         // Show notification for completed download
         chrome.notifications.create({
           type: 'basic',
-          iconUrl: 'icons/icon48.png',
-          title: 'Document Link Extractor',
+          iconUrl: 'icons/icon.svg',
+          title: 'Quick Doc',
           message: `Downloaded: ${downloadItem.filename}`
         });
       }

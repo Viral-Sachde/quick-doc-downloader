@@ -1,8 +1,9 @@
 {
     "manifest_version": 3,
-    "name": "Doc Dowloader By Viral Sachde",
+    "name": "Quick Doc",
     "version": "1.0.0",
-    "description": "Extract and process document links from any webpage with customizable settings",
+    "description": "Quickly extract and download document links from any webpage with customizable settings",
+    "theme_color": "#132649",
     "permissions": [
         "activeTab",
         "scripting",
@@ -15,13 +16,7 @@
     ],
     "action": {
       "default_popup": "popup.html",
-      "default_title": "Doc Dowloader By Viral Sachde ⚡",
-      "default_icon": {
-        "16": "icons/icon-16.png",
-        "32": "icons/icon-32.png",
-        "48": "icons/icon-48.png",
-        "128": "icons/icon-128.png"
-      }
+      "default_title": "Quick Doc"
     },
  "content_scripts": [
   {
@@ -35,11 +30,6 @@
       "service_worker": "background.js"
     },
     "icons": {
-      "16": "icons/icon-16.png",
-      "32": "icons/icon-32.png",
-      "48": "icons/icon-48.png",
-      "128": "icons/icon-128.png",
-      "256": "icons/icon-256.png",
-      "512": "icons/icon-512.png"
+      "128": "icons/icon.svg"
     }
-  }
+}

@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doc Dowloader By Viral Sachde</title>
+    <title>Quick Doc</title>
     <link rel="stylesheet" href="popup.css">
-    <link rel="icon" type="image/png" href="icons/favicon.png">
+    <link rel="icon" type="image/svg+xml" href="icons/icon.svg">
 </head>
 
 <body>
@@ -14,7 +14,8 @@
 
     <div class="container">
         <div class="header">
-            <h1>🔗 Doc Dowloader By Viral Sachde </h1>
+            <img src="icons/icon.svg" alt="Quick Doc" class="header-icon">
+            <h1>Quick Doc</h1>
             <p class="subtitle">Extract document links from the current page</p>
         </div>
 
@@ -46,14 +47,14 @@
                 <div class="form-group">
                     <label for="mediaPrefixXlsx">Excel Media Prefix:</label>
                     <input type="text" id="mediaPrefixXlsx"
-                        value="media | /Sitecore/media files/Y/SiteName/Universal/investors/result-reports-presentation/example.pdf"
+                        value="media | /Sitecore/media files/Y/SiteName/Universal/investors/result-reports-presentation/"
                         placeholder="Enter Excel media prefix">
                 </div>
 
                 <div class="form-group">
                     <label for="mediaPrefixHtml">HTML Media Prefix:</label>
                     <input type="text" id="mediaPrefixHtml"
-                        value="/~/media/Files/Y/SiteName/Universal/investors/result-reports-presentation/example.pdf"
+                        value="/~/media/Files/Y/SiteName/Universal/investors/result-reports-presentation/"
                         placeholder="Enter HTML media prefix">
                 </div>
             </div>
@@ -83,13 +84,13 @@
             <!-- Action Buttons -->
             <div class="actions">
                 <button type="button" id="extractBtn" class="btn btn-primary">
-                    📊 Extract Links
+                    Extract Links
                 </button>
                 <button type="button" id="downloadBtn" class="btn btn-secondary" disabled>
-                    💾 Download Files (Files)
+                    Download Files
                 </button>
                 <button type="button" id="exportBtn" class="btn btn-secondary" disabled>
-                    📋 Export Data (CSV and HTML)
+                    Export Data (CSV and HTML)
                 </button>
             </div>
         </form>
@@ -109,6 +110,11 @@
                 <div class="spinner"></div>
                 <span id="statusText">Processing...</span>
             </div>
+        </div>
+
+        <!-- Footer -->
+        <div style="text-align: center; padding: 12px 16px; font-size: 11px; color: #8E8E93; border-top: 0.5px solid #E5E5EA;">
+            Made with ❤️ by <strong style="color: #132649;">Viral Sachde</strong>.
         </div>
     </div>
 
