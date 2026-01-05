@@ -5,6 +5,8 @@
 <img src="icons/icon.svg" alt="Quick Doc Icon" width="256" height="256">
 
 
+
+
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 ![Chrome](https://img.shields.io/badge/chrome-88%2B-green.svg)
 ![License](https://img.shields.io/badge/license-MIT-orange.svg)
