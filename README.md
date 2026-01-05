@@ -1,4 +1,4 @@
-# Quick Doc Chrome Extension
+# Quick Doc Downloader Chrome Extension
 
 <div align="center">
 
